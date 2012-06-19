@@ -1,0 +1,273 @@
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,400italic,700);
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Layout
+:: Sidebar
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+body {
+	background-color: #f0f3f4;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #444444;
+	padding: 0px;
+	overflow-x: hidden;
+	background-image: url(../images/header.png);
+	background-repeat: repeat-x;
+	background-position: center -277px;
+}
+
+a {
+  color: #1D1D1B;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Gudea', Helvetica, Arial, sans-serif;
+	color:#1D1D1B;
+	font-weight:400;
+}
+
+div.reverie-header .subheader {
+	color: #1D1D1B;
+	font-weight: 400;
+	text-transform:uppercase;
+	font-size:20px;
+	margin:5px 0px 0px 0px;
+	text-shadow: 0px 0px 3px #ffffff;
+  filter: dropshadow(color=#ffffff, offx=0, offy=0);
+}
+
+img.border {
+	border: 1px solid #1D1D1B;
+	-webkit-box-shadow: 2px 2px 0px 0px #000000;
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+/* -----------------------------------------
+   Layout
+----------------------------------------- */
+
+div.reverie-header {
+	text-align: center;
+	border:none;
+	margin:0px;
+	height:140px;
+}
+
+nav.nav-bar {
+	position: relative;
+	height: 45px;
+	background: transparent;
+	margin-top:0px;
+	margin-bottom: 20px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #1D1D1B;
+	font-family: 'Gudea', Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+nav.nav-bar:before,
+nav.nav-bar:after {
+  content: "";
+  position: absolute;
+  border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #1D1D1B;
+	top: 0;
+  bottom: -1px;
+  width: 9999px;   /* some huge width */
+} 
+nav.nav-bar:before {
+  right: 100%; 
+}
+nav.nav-bar:after {
+  left: 100%;
+}
+
+nav.nav-bar a {
+  color: #1D1D1B;
+	text-transform:uppercase;
+	height:35px;
+	line-height:35px;
+	display:block;
+}
+
+dl.nav dd.current-menu-item a,
+dl.nav dd.current-post-ancestor a,
+dl.nav dd.current-menu-parent a,
+dl.nav dd.current-post-parent a {
+  background: none repeat scroll 0 0 #1D1D1B;
+}
+
+dl.nav dd a {
+  margin-left: 0px;
+}
+dl.nav dd a:hover {
+	background: rgb(255, 255, 255); /* The Fallback */
+	background: rgba(255, 255, 255, 0.70);
+}
+dl.nav dd.current-menu-item a:hover {
+	background-color:#1D1D1B;
+}
+
+.post-box h1 {
+	font-weight:400;
+	font-size:34px;
+	margin-bottom:10px;
+}
+
+
+/* Gallery 
+----------------------------------------- */
+#content .gallery img {
+	border: 1px solid #1D1D1B;
+}
+#content .gallery.gallery-size-large dl {
+	width:50%;
+}
+#content .gallery.gallery-size-large dl:nth-of-type(3n+2) dt {
+	margin-right:9px;
+}
+#content .gallery.gallery-size-large dl:nth-of-type(3n+3) dt {
+	margin-left:9px;
+}
+#content .gallery.gallery-size-large dl:nth-of-type(3n+1) {
+  width:100%;
+}
+#content .gallery.gallery-size-large dl:nth-of-type(3n+1) dt {
+	margin:0px;
+}
+.oldie #content .gallery.gallery-size-large dl {
+	width:100%; /* lt ie9 */
+}
+
+/* Banner 
+----------------------------------------- */
+.banner {
+	height:350px;
+	overflow:hidden;
+	font-family: 'Gudea', Helvetica, Arial, sans-serif;
+}
+.banner a {
+	display: block;
+	height: 175px;
+	width: 33%;
+	position: relative;
+	background-size: cover;
+	float: left;
+	color: #1D1D1B;
+	font-size: 12px;
+}
+.banner a:first-of-type {
+	height:350px;
+	width:67%;
+	font-size:16px;
+}
+.banner a .caption {
+	position:absolute;
+	left:0px;
+	bottom:15px;
+	background-color:#ffe160;
+	padding:15px 20px;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3); 
+}
+.banner a:nth-of-type(2) .caption {
+	left:auto;
+	right:0px;
+	background-color:#e76b79;
+	text-align:right;
+}
+.banner a:nth-of-type(3) .caption {
+	background-color:#7eccdf;
+}
+.banner > br {
+	display:none;
+}
+
+
+footer#content-info {
+	background-color:#1D1D1B;
+	color:#FFFFFF;
+	position:relative;
+	margin-top:15px;
+	padding:0px 0px 10px 0px;
+}
+footer#content-info:before,
+footer#content-info:after {
+  content: "";
+  position: absolute;
+  background-color:#1D1D1B;
+	top: 0;
+  bottom: 0px;
+  width: 9999px;   /* some huge width */
+} 
+footer#content-info:before {
+  right: 100%; 
+}
+footer#content-info:after {
+  left: 100%;
+}
+footer#content-info h6,
+footer#content-info a {
+	color:#FFFFFF;
+}
+
+
+/* -----------------------------------------
+   Sidebar 
+----------------------------------------- */
+
+#sidebar .widget {
+	background: rgb(255, 255, 255); /* The Fallback */
+	background: rgba(255, 255, 255, 0.50);
+	margin-bottom: 20px;
+	border: 1px solid #1D1D1B;
+	-webkit-box-shadow: 2px 2px 0px 0px #000000;
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+#sidebar .widget .sidebar-section {
+	padding: 10px 15px;
+	width:auto;
+}
+
+#sidebar .widget h6 {
+	background-color:#1D1D1B;
+	color:#FFFFFF;
+	margin:0px 0px 5px -17px;
+	display:inline-block;
+	padding:10px 12px;
+}
+.oldie #sidebar .widget h6 {
+	display:inline;
+}
+
+#sidebar .widget.widget_tweetblenderfavorites .tb_header {
+	margin-top:-15px;
+}
+#sidebar .widget.widget_tweetblenderfavorites .tb_header > img {
+	display:none;
+}
+#sidebar .widget.widget_tweetblenderfavorites form {
+	margin:0px;
+}
+#sidebar .widget.widget_tweetblenderfavorites  div.tb_tweet {
+  padding: 5px 0px;
+}
