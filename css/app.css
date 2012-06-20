@@ -155,10 +155,22 @@ dd:hover > .sub-menu dd {
 	float:none;
 }
 
+.post-box h1,
+.post-box h2,
+.post-box h3,
+.post-box h4
+.post-box h5,
+.post-box h6 {
+	font-weight:400;
+}
 .post-box h1 {
 	font-weight:400;
 	font-size:34px;
 	margin-bottom:10px;
+}
+.post-box p {
+	font-size: 1.3rem;
+	line-height: 1.25;
 }
 
 
