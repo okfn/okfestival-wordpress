@@ -65,8 +65,8 @@
 		<div class="row">
 			<header class="twelve columns" role="banner">
 				<div class="reverie-header">
-					<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="133" height="96" alt="<?php bloginfo('name'); ?>"></a>
-					<h1 class="subheader"><?php bloginfo('description'); ?></h1>
+					<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>"></a></h1>
+					<p class="subheader"><?php bloginfo('description'); ?></p>
 				</div>
 				<nav role="navigation" class="nav-bar">
 					<?php /*
