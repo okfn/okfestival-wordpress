@@ -254,7 +254,7 @@ add_shortcode( 'row', 'row_shortcode' );
 
 function column_shortcode( $atts, $content = null ) {  
 	extract( shortcode_atts( array(
-			'span' => '12',
+			'span' => 'twelve',
 		), $atts ) );
 		
 		return '<div class="'.$span.' columns">' .do_shortcode($content). '</div>'; 
