@@ -125,11 +125,14 @@ dl.nav dd a {
 	-webkit-border-radius: 0px;
 border-radius: 0px; 
 }
-dl.nav dd a:hover {
+dl.nav dd a:hover,
+dl.nav dd.hover a {
 	background: rgb(255, 255, 255); /* The Fallback */
 	background: rgba(255, 255, 255, 0.70);
 }
-dl.nav dd.current-menu-item a:hover {
+
+dl.nav dd.current-menu-item a:hover,
+dl.nav dd.current-menu-item.hover a {
 	background-color:#1D1D1B;
 }
 
@@ -140,7 +143,7 @@ dl.nav dd.current-menu-item a:hover {
 	-moz-opacity:0.0;
 	-khtml-opacity: 0.0;
 	opacity: 0.0;
-	background-color:#FFF;
+	background-color:#FAFBFB;
 	z-index:2;
 }
 dd:hover > .sub-menu,
