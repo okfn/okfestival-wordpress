@@ -117,6 +117,8 @@ dl.nav dd.current-post-parent a {
 
 dl.nav dd a {
   margin-left: 0px;
+	-webkit-border-radius: 0px;
+border-radius: 0px; 
 }
 dl.nav dd a:hover {
 	background: rgb(255, 255, 255); /* The Fallback */
@@ -124,6 +126,28 @@ dl.nav dd a:hover {
 }
 dl.nav dd.current-menu-item a:hover {
 	background-color:#1D1D1B;
+}
+
+.sub-menu {
+	position:absolute;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity:0.0;
+	-khtml-opacity: 0.0;
+	opacity: 0.0;
+	background-color:#FFF;
+	z-index:2;
+}
+dd:hover > .sub-menu,
+.sub-menu:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity:1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+}
+dd:hover > .sub-menu dd {
+	float:none;
 }
 
 .post-box h1 {
