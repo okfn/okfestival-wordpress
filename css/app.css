@@ -132,8 +132,11 @@ dl.nav dd.hover a {
 }
 
 dl.nav dd.current-menu-item a:hover,
-dl.nav dd.current-menu-item.hover a {
-	background-color:#1D1D1B;
+dl.nav dd.current-menu-item.hover a,
+dl.nav dd.current-menu-ancestor a:hover,
+dl.nav dd.current-menu-ancestor.hover a {
+	background: rgb(29, 29, 29);
+	background: rgba(29, 29, 29, 1.0);
 }
 
 .sub-menu {
