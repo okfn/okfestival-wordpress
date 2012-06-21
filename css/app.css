@@ -19,9 +19,9 @@ body {
 	color: #444444;
 	padding: 0px;
 	overflow-x: hidden;
-	/*background-image: url(../images/header.png);*/
+	background-image: url(../images/header.png);
 	background-repeat: repeat-x;
-	background-position: center -277px;
+	background-position: center -1px;
 }
 
 a {
@@ -69,7 +69,7 @@ div.reverie-header {
 	text-align: center;
 	border:none;
 	margin:0px;
-	height:140px;
+	height:195px;
 }
 
 nav.nav-bar {

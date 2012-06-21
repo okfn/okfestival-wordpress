@@ -80,8 +80,7 @@
 		<div class="row">
 			<header class="twelve columns" role="banner">
 				<div class="reverie-header">
-					<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>"></a></h1>
-					<p class="subheader"><?php bloginfo('description'); ?></p>
+					<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?> | <?php bloginfo('description'); ?>"></a></h1>
 				</div>
 				<nav role="navigation" class="nav-bar">
 					<?php /*
