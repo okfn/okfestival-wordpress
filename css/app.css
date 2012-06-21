@@ -17,7 +17,7 @@ body {
 	background-color: #f0f3f4;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #444444;
-	padding: 0px;
+	padding: 25px 0px 0px 0px;
 	overflow-x: hidden;
 	background-image: url(../images/header.png);
 	background-repeat: repeat-x;
