@@ -123,7 +123,7 @@ dl.nav dd.current-post-parent a {
 dl.nav dd a {
   margin-left: 0px;
 	-webkit-border-radius: 0px;
-border-radius: 0px; 
+  border-radius: 0px; 
 }
 dl.nav dd a:hover,
 dl.nav dd.hover a {
@@ -141,24 +141,28 @@ dl.nav dd.current-menu-ancestor.hover a {
 
 .sub-menu {
 	position:absolute;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	-moz-opacity:0.0;
-	-khtml-opacity: 0.0;
-	opacity: 0.0;
 	background-color:#FAFBFB;
 	z-index:2;
+	display:none;
 }
 dd:hover > .sub-menu,
 .sub-menu:hover {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	-moz-opacity:1.0;
-	-khtml-opacity: 1.0;
-	opacity: 1.0;
+	display:inherit;
 }
 dd:hover > .sub-menu dd {
 	float:none;
+}
+dd:hover > .sub-menu dd a {
+	line-height:18px;
+	height:18px;
+}
+dd:hover > .sub-menu dd a:hover {
+	background-color:#7ECCDF;
+}
+dd .sub-menu ul {
+	left:100%;
+	margin-top:-28px;
+	width:100%;
 }
 
 .post-box h1,
