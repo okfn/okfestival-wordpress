@@ -32,7 +32,7 @@ foreach ($sidebars as $sidebar) {
 $sidebars = array('Footer');
 foreach ($sidebars as $sidebar) {
 	register_sidebar(array('name'=> $sidebar,
-		'before_widget' => '<article id="%1$s" class="four columns widget %2$s"><div class="footer-section">',
+		'before_widget' => '<article id="%1$s" class="three columns widget %2$s"><div class="footer-section">',
 		'after_widget' => '</div></article>',
 		'before_title' => '<h6><strong>',
 		'after_title' => '</strong></h6>'
