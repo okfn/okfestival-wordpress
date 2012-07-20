@@ -183,6 +183,22 @@ dd .sub-menu ul {
 }
 
 
+dl.tabs {
+  margin: 0px;
+	height:40px;
+}
+dl.tabs dd a {
+	text-decoration:none;
+	padding: 5px 10px;
+}
+dl.tabs dd a.active {
+	background-color:#F7F9F9;
+}
+ul.contained.tabs-content > li {
+	background-color:#F7F9F9;
+}
+
+
 /* Gallery 
 ----------------------------------------- */
 #content .gallery img {
