@@ -23,6 +23,7 @@ body {
 	background-repeat: repeat-x;
 	background-position: center -1px;
 }
+body,
 body.wp-admin {
   padding-top: 0px !important;
 }
