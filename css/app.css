@@ -19,9 +19,6 @@ body {
 	color: #444444;
 	padding: 0px;
 	overflow-x: hidden;
-	background-image: url(../images/header.png);
-	background-repeat: repeat-x;
-	background-position: center -1px;
 }
 body,
 body.wp-admin {
@@ -68,6 +65,12 @@ img.border {
 /* -----------------------------------------
    Layout
 ----------------------------------------- */
+
+body > #container {
+	background-image: url(../images/header.png);
+	background-repeat: repeat-x;
+	background-position: center -1px;
+}
 
 #wp-admin-bar {
 	display:none;
