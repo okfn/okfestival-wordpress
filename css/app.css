@@ -17,7 +17,7 @@ body {
 	background-color: #f0f3f4;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #444444;
-	padding: 25px 0px 0px 0px;
+	padding: 0px !important;
 	overflow-x: hidden;
 	background-image: url(../images/header.png);
 	background-repeat: repeat-x;
@@ -64,6 +64,10 @@ img.border {
 /* -----------------------------------------
    Layout
 ----------------------------------------- */
+
+#wp-admin-bar {
+	display:none;
+}
 
 div.reverie-header {
 	text-align: center;
@@ -163,6 +167,12 @@ dd .sub-menu ul {
 	left:100%;
 	margin-top:-28px;
 	width:100%;
+}
+
+header #headerimg {
+	position:absolute;
+	top:0px;
+	right:0px;
 }
 
 .post-box h1,

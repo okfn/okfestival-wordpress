@@ -104,6 +104,7 @@
 						'walker' => new description_walker())
 					); ?>
 				</nav>
+        <img id="headerimg" src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 			</header>
 		</div>
 		
