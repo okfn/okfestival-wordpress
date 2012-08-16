@@ -73,6 +73,8 @@ img.border {
 	position:absolute;
 	top:0;
 	z-index:-1;
+	opacity:0.7;
+	background-color:#FFF;
 }
 #logoVizContainer #OKfestContainer {
 	position: relative;
