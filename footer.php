@@ -21,5 +21,29 @@
 	<![endif]-->
 	
 	<?php wp_footer(); ?>
+  
+  <!-- Visulisation -->
+  <div id="logoVizContainer">
+    <![if gte IE 9]>
+      <div id="OKfestContainer" style="display:none;">
+        <div id="LogoVizLinks"></div>
+        <div id="LogoVizNodes"></div>
+        <div id="LogoVizLoose"></div>
+      </div>
+      <script type="text/javascript" src="http://www.floapps.com/lab/misc/oklogo/script/jquery-1.7.2.min.js"></script>
+      <script type="text/javascript" src="http://www.floapps.com/lab/misc/oklogo/script/d3.js"></script>
+      <script type="text/javascript" src="http://www.floapps.com/lab/misc/oklogo/script/script.php"></script>
+    <![endif]>
+    <!--[if lt IE 9]>
+    <style type="text/css">
+      body > #container {
+        background-image: url(../images/header.png);
+        background-repeat: repeat-x;
+        background-position: center -1px;
+      }
+    </style>
+    <![endif]-->
+  </div>
+  
 </body>
 </html>

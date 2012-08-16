@@ -66,10 +66,16 @@ img.border {
    Layout
 ----------------------------------------- */
 
-body > #container {
-	background-image: url(../images/header.png);
-	background-repeat: repeat-x;
-	background-position: center -1px;
+#logoVizContainer {
+	width:2000;
+	height:260px;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	z-index:-1;
+}
+#logoVizContainer #OKfestContainer {
+	position: relative;
 }
 
 #wp-admin-bar {
