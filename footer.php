@@ -37,7 +37,7 @@
     <!--[if lt IE 9]>
     <style type="text/css">
       body > #container {
-        background-image: url(../images/header.png);
+        background-image: url(<?php echo get_template_directory_uri(); ?>/images/header.png);
         background-repeat: repeat-x;
         background-position: center -1px;
       }
