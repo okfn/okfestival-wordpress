@@ -105,7 +105,13 @@
 					); ?>
 				</nav>
         <div class="header-content">
-          <img id="headerimg" src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+          <?php
+						// Check for header image
+						$header_image = get_header_image();
+						if ( ! empty( $header_image )) :
+					?>
+            <img id="headerimg" src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+          <?php endif; ?>
           <div class="headertext">
             <?php
 								$options = get_option('fest_theme_options');
