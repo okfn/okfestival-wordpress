@@ -30,9 +30,8 @@
         <div id="LogoVizNodes"></div>
         <div id="LogoVizLoose"></div>
       </div>
-      <script type="text/javascript" src="http://www.floapps.com/lab/misc/oklogo/script/jquery-1.7.2.min.js"></script>
-      <script type="text/javascript" src="http://www.floapps.com/lab/misc/oklogo/script/d3.js"></script>
-      <script type="text/javascript" src="http://www.floapps.com/lab/misc/oklogo/script/script.php"></script>
+      <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/d3.js"></script>
+      <?php echo do_shortcode("[vis]"); ?>
     <![endif]>
     <!--[if lt IE 9]>
     <style type="text/css">

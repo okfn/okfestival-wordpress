@@ -67,7 +67,7 @@ img.border {
 ----------------------------------------- */
 
 #logoVizContainer {
-	width:2000;
+	width:100%;
 	height:260px;
 	overflow:hidden;
 	position:absolute;
@@ -76,7 +76,7 @@ img.border {
 	opacity:0.7;
 	background-color:#FFF;
 }
-#logoVizContainer #OKfestContainer {
+#OKfestContainer {
 	position: relative;
 }
 
@@ -184,10 +184,24 @@ dd .sub-menu ul {
 	width:100%;
 }
 
-header #headerimg {
+header .header-content {
 	position:absolute;
 	top:0px;
 	right:0px;
+	text-align:right;
+}
+header #headerimg {
+	display:block;
+}
+header .headertext {
+	font-family: 'Gudea', Helvetica, Arial, sans-serif;
+	padding-top:10px;
+}
+header .headertext a {
+	text-decoration:none;
+}
+header .headertext a:hover {
+	text-decoration:underline;
 }
 
 .post-box h1,

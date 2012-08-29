@@ -268,6 +268,10 @@ endif;
 add_action( 'after_setup_theme', 'customisetheme_setup' );
 
 
+/* Theme Options */
+require_once ( get_stylesheet_directory() . '/theme-options.php' );
+
+
 /* Shortcodes */
 
 /* No Sidebar ********************************************************************************/
@@ -321,5 +325,14 @@ function column_shortcode( $atts, $content = null ) {
 		}
 
 add_shortcode('column', 'column_shortcode'); 
+
+
+/* Visualisation ****************************************************************************/
+
+function vis_shortcode( $atts ){
+ return '<script type="text/javascript" src="'.get_template_directory_uri().'/js/vis.js"></script>';
+}
+add_shortcode( 'vis', 'vis_shortcode' );
+
 
 ?>
