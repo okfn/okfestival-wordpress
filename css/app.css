@@ -79,6 +79,9 @@ img.border {
 #OKfestContainer {
 	position: relative;
 }
+#logoVizContainer #OKfestContainer text.text {
+	opacity:0.3;
+}
 
 #wp-admin-bar {
 	display:none;
