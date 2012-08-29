@@ -202,9 +202,13 @@ header .headertext {
 }
 header .headertext a {
 	text-decoration:none;
+	background: rgb(255, 255, 255); /* The Fallback */
+	background: rgba(255, 255, 255, 0.70);
+	padding:2px;
 }
 header .headertext a:hover {
-	text-decoration:underline;
+	background-color:#1D1D1B;
+	color:#FFF;
 }
 
 .post-box h1,
