@@ -124,7 +124,7 @@
 
 		<div class="row">
 			<h3 style="font-weight: bold; color: #c00">OKFestival 2012 is now over!</h3>
-			<p>OKFestival 2012 is, sadly, long gone (although these pages will remain here for posterity). Luckily, <a href="https://okfestival.org/">the next OKFestival is nearly here!</a></p>
+			<p>OKFestival 2012 is, sadly, long gone (although these pages will remain here for posterity). Luckily, <a href="http://okfestival.org/">the next OKFestival is nearly here!</a></p>
 		</div>
 		
 		<!-- Row for main content area -->
